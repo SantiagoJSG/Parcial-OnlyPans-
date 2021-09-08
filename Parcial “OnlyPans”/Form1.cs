@@ -12,6 +12,9 @@ namespace Parcial__OnlyPans_
 {
 	public partial class Form1 : Form
 	{
+		Form admin = new Admin();
+		Form empleado = new Empleados();
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -20,12 +23,10 @@ namespace Parcial__OnlyPans_
 		{
 			if (txtusuario.Text == "admin" && txtcontraseña.Text == "1") 
 			{
-				Form admin = new Admin();
 				admin.Show();			
 			}
 			if (txtusuario.Text == "empleado" && txtcontraseña.Text == "2")
 			{
-				Form empleado = new Empleados();
 				empleado.Show();
 			}
 		}

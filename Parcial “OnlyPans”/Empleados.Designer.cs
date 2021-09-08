@@ -330,6 +330,7 @@ namespace Parcial__OnlyPans_
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.ActiveBorder;
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.dtfecha);
@@ -360,6 +361,7 @@ namespace Parcial__OnlyPans_
 			this.Controls.Add(this.label1);
 			this.Name = "Empleados";
 			this.Text = "Empleados";
+			this.Load += new System.EventHandler(this.Empleados_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

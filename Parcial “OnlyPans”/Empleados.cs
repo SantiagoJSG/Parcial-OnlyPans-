@@ -26,7 +26,7 @@ namespace Parcial__OnlyPans_
 			}
 			if (Convert.ToInt16(contador_no_aliñado.Text) == 0 && Convert.ToInt16(contador_aliñado.Text) == 0 && Convert.ToInt16(contador_especial.Text) == 0)
 			{
-				MessageBox.Show("No compro nada");
+				MessageBox.Show("No selecciono ningun tipo de pan");
 				return;
 			}
 			recibo.Text = recibo.Text + "Nombre: " + txtcliente.Text + "\nCedula: " + txtcedula.Text +"\nFecha de venta: " + dtfecha.Value + "\n";
@@ -46,6 +46,8 @@ namespace Parcial__OnlyPans_
 			contador_no_aliñado.Text = "0";
 			contador_aliñado.Text = "0";
 			contador_especial.Text = "0";
+			txtcliente.Text = "";
+			txtcedula.Text = "";
 		}
 
 		private void boton_no_aliñado_negativo_Click(object sender, EventArgs e)
@@ -97,6 +99,11 @@ namespace Parcial__OnlyPans_
 		private void boton_especial_positivo_Click(object sender, EventArgs e)
 		{
 			contador_especial.Text = Convert.ToString(Convert.ToInt16(contador_especial.Text) + 1);
+		}
+
+		private void Empleados_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
